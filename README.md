@@ -1,0 +1,1 @@
+git clone --recursive https://github.com/Wicksio/wordpress.git
