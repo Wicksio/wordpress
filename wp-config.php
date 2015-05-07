@@ -76,5 +76,11 @@ define('WP_DEBUG', false);
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
+define('WP_HOME',    'http://'.$_SERVER['SERVER_NAME']);
+define('WP_SITEURL', WP_HOME.'/wordpress');
+
+define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'].'/wp-content');
+define('WP_CONTENT_URL', WP_HOME.'/wp-content');
+
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
